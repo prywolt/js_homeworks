@@ -48,3 +48,14 @@ console.log(sum);
 const sumAbs = arr.map(Math.abs).reduce((a, b) => a + b);
 
 console.log('1.2 Suma wartości bezwględnych z elementów w tablicy:', sumAbs);
+
+// 1.3
+
+const minTwenty = arr.filter((el) => {
+    return el >= 20;
+});
+
+console.log('1.3 Elementy większe lub równe od 20:', minTwenty);
+
+// 1.4
+
