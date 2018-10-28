@@ -38,8 +38,13 @@ const arr = [11, -10, 50, 5, -8, 9, 20, 21, -4, 11, -5, -12, 100, 20, 14, 8, 19,
 
 // 1.1
 
-const sum = arr.reduce((a, b) => {
-     return a + b
-});
+const sum = arr.reduce((a, b) => a + b);
 
 console.log(sum);
+
+
+// 1.2
+
+const sumAbs = arr.map(Math.abs).reduce((a, b) => a + b);
+
+console.log('1.2 Suma wartości bezwględnych z elementów w tablicy:', sumAbs);
