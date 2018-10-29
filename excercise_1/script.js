@@ -59,3 +59,7 @@ console.log('1.3 Elementy większe lub równe od 20:', minTwenty);
 
 // 1.4
 
+const onlyMinus = arr.filter((el) => {
+    return el < 0}).reduce((a, b) => a + b);
+
+console.log('1.4 Sume elementów ujemnych: -134', onlyMinus);
