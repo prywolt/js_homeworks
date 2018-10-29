@@ -63,3 +63,12 @@ const onlyMinus = arr.filter((el) => {
     return el < 0}).reduce((a, b) => a + b);
 
 console.log('1.4 Sume elementów ujemnych: -134', onlyMinus);
+
+
+// 1.5
+
+const oddSum = arr.filter((a, b) => {
+    return b % 2 === 0}).reduce((a, b) => a + b);
+
+console.log('1.5 Suma elementów parzystych: 193', oddSum);
+
