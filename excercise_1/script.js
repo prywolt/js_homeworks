@@ -72,3 +72,41 @@ const oddSum = arr.filter((a, b) => {
 
 console.log('1.5 Suma elementów parzystych: 193', oddSum);
 
+
+
+Część 2 Pętle + funkcje:
+
+ 2.1 Napisz funkcję, która przyjmuje 2 argumenty (2 obiekty z kluczami name oraz age)
+ i zwraca ten obiekt, która ma większą wartość age. Następnie ze zwróconego obiektu wyświetl jego imię.
+ Input: {name: 'Jasio', age: 8} , {name: 'Kazio', age: 11}
+ Output: '2.1 Starszy jest: Kazio'
+
+ 2.2 Napisz pętle, która iteruje od 1 do 50 i na każdej wielokrotności 3 wyświetl Fizz, na każdej wielokrotności 5 Buzz,
+ a na wielokrotności 3 i 5 FizzBuzz;
+ Output: '2.2: Fizz Buzz Fizz Fizz Buzz Fizz FizzBuzz Fizz Buzz Fizz Fizz Buzz Fizz FizzBuzz Fizz Buzz Fizz Fizz Buzz Fizz FizzBuzz Fizz Buzz'
+
+ 2.3 Napisz funkcję, która przyjmuje 3 parametry (2x number, 1x string jako operator (dostępne +,-,/,*) i zwraca wartość wyniku:
+ Input: 1, '+', 2    Output: '2.3.1: 3'
+ Input: 20, '-', 3   Output: '2.3.2: 17'
+ Input: -1, '*', 8   Output: '2.3.3: -8'
+ Input: 4, '/', 2    Output: '2.3.4: 2'
+ Input: 5, '!', 5    Output: '2.3.5: Nie znany operator'
+ Input: 4, '/', 0    Output: '2.3.6: Nie można dzielić przez zero'
+
+ 2.4 Napisz funkcję, która przyjmuje 2 parametry (znak, liczbę), która wyświetli ciąg znaków połączony '-' ale nie więcej niż 10 znaków.
+ Input: $, 5         Output: $-$-$-$-$
+ Input: $, 17        Output: $-$-$-$-$-$-$-$-$-$
+
+ 2.5* (+0,5pkt) Napisz pętle, która zwróci dany ciąg znaków w konsoli (dokładnie w takiej strukturze).
+ Output: '2.5:
+ *
+ * *
+ * * *
+ * * * *
+ * * * * *
+
+ */
+
+// Kod dla części 2 poniżej:
+
+// 2.1
