@@ -73,7 +73,7 @@ const oddSum = arr.filter((a, b) => {
 console.log('1.5 Suma elementów parzystych: 193', oddSum);
 
 
-
+/****************************************************************************************************
 Część 2 Pętle + funkcje:
 
  2.1 Napisz funkcję, która przyjmuje 2 argumenty (2 obiekty z kluczami name oraz age)
@@ -110,3 +110,33 @@ Część 2 Pętle + funkcje:
 // Kod dla części 2 poniżej:
 
 // 2.1
+
+const jasio = {name: 'Jasio', age: 8};
+const kazio = {name: 'Kazio', age: 11};
+
+function ageCheck(a, b) {
+    if (a > b) {
+    return a.name;
+     } else if (b > a) {
+    return kazio.name;
+       }
+    };
+
+    console.log('2.1 Starszy jest:' + ageCheck(jasio.name, kazio.name));
+
+
+// 2.2
+
+let multi = '';
+for (let i = 1; i <= 50; i++) {
+    if (i % 15 === 0) {
+        multi += 'FizzBuzz '
+    } else if ( i % 5 === 0) {
+        multi += 'Buzz '
+    } else if ( i % 3 === 0) {
+        multi += 'Fizz '
+    }
+}
+console.log('2.2', multi);
+    
+
