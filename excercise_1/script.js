@@ -122,7 +122,7 @@ function ageCheck(a, b) {
        }
     };
 
-    console.log('2.1 Starszy jest:' + ageCheck(jasio.name, kazio.name));
+console.log('2.1 Starszy jest:' + ageCheck(jasio.name, kazio.name));
 
 
 // 2.2
@@ -138,5 +138,31 @@ for (let i = 1; i <= 50; i++) {
     }
 }
 console.log('2.2', multi);
-    
 
+
+// 2.3
+
+const math = (num1, string, num2) => {
+    if (string === '+') {
+        return num1 + num2;
+    } else if (string === '-') {
+        return num1 - num2;
+    } else if (string === '*') {
+        return num1 * num2;
+    } else if (string === '/') {
+        if (num2 !== 0) {
+            return num1 / num2;
+        } else {
+            return 'Nie można dzilić przez zero';
+        }
+    } else if (string === '!') {
+        return 'Nieznany operator';
+    }
+}
+
+console.log('2.3.1:', math(1, '+', 2));
+console.log('2.3.2:', math(20, '-', 3));
+console.log('2.3.3:', math(-1, '*', 8));
+console.log('2.3.4:', math(4, '/', 2));
+console.log('2.3.5:', math(5, '!', 5));
+console.log('2.3.6:', math(4, '/', 0));
