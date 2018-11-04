@@ -166,3 +166,21 @@ console.log('2.3.3:', math(-1, '*', 8));
 console.log('2.3.4:', math(4, '/', 2));
 console.log('2.3.5:', math(5, '!', 5));
 console.log('2.3.6:', math(4, '/', 0));
+
+// 2.4
+
+const dolar = (sign, number) => {
+    if (number >= 10) {
+        number = 10
+    }
+    let output = '';
+    for (let i = 0; i < number - 1; i++) {
+        output += sign + '-'
+    }
+    output += sign;
+    return output;
+
+}
+
+console.log(dolar('$', 5));
+console.log(dolar('$', 17));
