@@ -184,3 +184,12 @@ const dolar = (sign, number) => {
 
 console.log(dolar('$', 5));
 console.log(dolar('$', 17));
+
+
+// 2.5
+
+let stars = '';
+for (i = 0; i < 5; i++) {
+    stars += '* ';
+    console.log(stars);
+}
