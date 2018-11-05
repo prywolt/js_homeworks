@@ -193,3 +193,69 @@ for (i = 0; i < 5; i++) {
     stars += '* ';
     console.log(stars);
 }
+
+/****************************************************************************************************
+ Część 3 Obiekty:
+
+ 3.1 Napisz obiekt 'pacient' z kluczami: name, surname, status oraz changeStatus. Pierwsze trzy mają przyjmować zmienną
+ typu string a ostatnia ma być metodą (funkcją), która zmienia status danego pacjenta.
+ Input: pacient.status = 'chory' pacient.changeStatus
+ Output: '3.1 pacient.status: zdrowy'
+ Input: pacient.status = 'zdrowy' pacient.changeStatus
+ Output: '3.1 pacient.status: chory'
+
+ 3.2 Napisz pętle, która stworzy tablicę obiektów z kluczami name oraz price. Wartość name powinna być
+ taka sama jak wartość tablicy natomiast price ma wstawiać losową liczbę (maksymalnie 3 cyfrowa).
+ Input: ['IPhone 4S', 'Samsung S5', 'Huawei 5', 'LG 7']
+ Output: '3.2: [
+ {name: 'IPhone 4S', price: losowa liczba <= 999},
+ {name: 'Samsung S5', price: losowa liczba <= 999},
+ {name: 'Huawei 5', price: losowa liczba <= 999},
+ {name: 'LG 7', price: losowa liczba <= 999}
+ ]'
+
+ 3.3 Napisz pętle wyświetlającą nazwę pizzy i jej składniki w nawiasie oraz po myślniku cenę.
+ Input: [
+ {name: 'Margarita', price: 15, ingredients: ['ser', 'sos', 'oregano']},
+ {name: 'Roma', price: 18, ingredients: ['ser', 'sos', 'szynka', 'pieczarki']},
+ {name: 'Salami', price: 18, ingredients: ['ser', 'sos', 'salami']}
+ ]
+ Output: '3.3:
+ Margarita (ser, sos, oregano) - 15
+ Roma (ser, sos, szynka, pieczarki) - 18
+ Salami (ser, sos, salami) - 18'
+
+ 3.4 Wyświetl wartość w konsoli z obiektu labyrinth:
+ a) 'Garfield'
+ b) 'elephant'
+ c) 'flying'
+ Input: labirynth = {
+        animals: [
+            { name: 'Pluto', species: 'dog' },
+            { name: 'Garfield', species: 'cat' },
+            { name: 'Simba', species: 'lion' },
+            { name: 'Maniek', species: 'elephant' }
+        ],
+        nonAnimals: [
+            { name: 'R2D2', species: 'robot', skills: ['fixing', 'flying'] },
+            { name: 'C3PO', species: 'robot', skills: ['talking'] }
+        ],
+        showAnimals: function() { console.log(this.animals) },
+        showNonAnimals: function() { console.log(this.nonAnimals) }
+    }
+ Output: '3.4: a) Garfield b) elephant c) flying'
+
+ 3.5* (+0,5pkt) Utwórz obiekt o nazwie SoftwareUsers z kluczami users i addUser. W users ma być tablicą użytkowników (obiektów z kluczami
+ name, surname, id) - pusta na początku. W addUser ma być funkcją przyjmująca dwa argumenty name i surname,
+ która dodaje nowego użytkownika do tablicy w users z *unikatowym* id.
+ Input: SoftwareUsers.add('Jan', 'Kowalski') SoftwareUsers.add('Janina', 'Kowalska')
+ Output: '3.5:
+ [{ name: 'Jan', surname: 'Kowalski', id: 1},
+ { name: 'Janina', surname: 'Kowalska', id: 2}]
+
+ */
+
+// Kod dla części 3 poniżej:
+
+// 3.1
+
