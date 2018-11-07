@@ -259,3 +259,37 @@ for (i = 0; i < 5; i++) {
 
 // 3.1
 
+const pacient = {
+    name: '',
+    surname: '',
+    status: '',
+    changeStatus: function () {
+        if (this.status === 'zdrowy') {
+            this.status = 'chory'
+        } else if (this.status === 'chory') {
+            this.status = 'zdrowy'
+        }
+    }
+};
+
+pacient.status = 'chory';
+pacient.changeStatus();
+console.log('3.1 pacient.status:', pacient.status);
+pacient.status = 'zdrowy';
+pacient.changeStatus();
+console.log('3.1 pacient.status:', pacient.status);
+
+
+// 3.2
+
+const phone = ['IPhone 4S', 'Samsung S5', 'Huawei 5', 'LG 7'];
+let phonePrices = [];
+
+for (let i = 0; i < phone.length; i++) {
+    phonePrices[i] = {
+        name: phone[i],
+        price: map.floor(map.random() * 999)
+    }
+};
+
+console.log('3.2: ', phonePrices);
