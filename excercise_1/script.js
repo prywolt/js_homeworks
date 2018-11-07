@@ -288,8 +288,21 @@ let phonePrices = [];
 for (let i = 0; i < phone.length; i++) {
     phonePrices[i] = {
         name: phone[i],
-        price: map.floor(map.random() * 999)
+        price: Math.floor(Math.random() * 999)
     }
 };
 
 console.log('3.2: ', phonePrices);
+
+// 3.3
+
+const pizza = [
+    {name: 'Margarita', price: 15, ingidients: ['ser', 'sos', 'oregano']},
+    {name: 'Roma', price: 18, ingidients:['ser', 'sos', 'szynka', 'pieczarki']},
+    {name: 'Salami', price: 18, ingredients: ['ser', 'sos', 'salami']}
+];
+
+console.log('3.3: '),
+pizza.forEach((el) => {
+    console.log(el.name + ' (' + el.ingidients + ') - ' + el.price)
+});
