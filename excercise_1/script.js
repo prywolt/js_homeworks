@@ -306,3 +306,22 @@ console.log('3.3: '),
 pizza.forEach((el) => {
     console.log(el.name + ' (' + el.ingidients + ') - ' + el.price)
 });
+
+// 3.4
+
+const labirynth = {
+    animals: [
+        { name: 'Pluto', species: 'dog' },
+        { name: 'Garfield', species: 'cat' },
+        { name: 'Simba', species: 'lion' },
+        { name: 'Maniek', species: 'elephant' }
+    ],
+    nonAnimals: [
+        { name: 'R2D2', species: 'robot', skills: ['fixing', 'flying'] },
+        { name: 'C3PO', species: 'robot', skills: ['talking'] }
+    ],
+    showAnimals: function() { console.log(this.animals) },
+    showNonAnimals: function() { console.log(this.nonAnimals) }
+};
+console.log('3.4: ' + 'a) ' + labirynth.animals[1].name + ' b) ' + labirynth.animals[3].species + ' c) ' + labirynth.nonAnimals[0].skills[1]);
+
