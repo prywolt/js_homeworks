@@ -366,4 +366,8 @@ const uppercaseFirstLetter = (string) => {
 };
 
 console.log('4.1.1:', uppercaseFirstLetter('kamil'));
-console.log()
+console.log('4.1.2:', uppercaseFirstLetter(12));
+
+
+// 4.2
+
