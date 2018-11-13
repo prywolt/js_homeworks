@@ -325,3 +325,45 @@ const labirynth = {
 };
 console.log('3.4: ' + 'a) ' + labirynth.animals[1].name + ' b) ' + labirynth.animals[3].species + ' c) ' + labirynth.nonAnimals[0].skills[1]);
 
+
+/***********************************************
+
+Część 4 String:
+
+ 4.1 Napisz funkcję, która zwraca stringa z dużą pierwszą literę.
+ Input: uppercaseFirstLetter('kamil') Output: '4.1.1: Kamil'
+ Input: uppercaseFirstLetter(12) Output: '4.1.2: to nie jest string'
+
+ 4.2 Wyczyść podane stringi z znaków '$' (użyj pętli, zwróć tablicę).
+ Input: ['K$$ami$$l', '$$Jan$ek', 'Kr$$z$ych$u', 'M$$ich$$ał$']
+ Output: '4.2: ['Kamil', 'Janek', 'Krzychu', Michał']'
+
+ 4.3 Rozdziel podane stringi na dwa odrębne (zwróć tablicę):
+ Input: ['Jan Kowalski', 'Janina Kowalska', 'Kamil Stoch']
+ Output: '4.3: ['Jan', 'Kowalski', 'Janina', 'Kowalska', 'Kamil', 'Stoch']'
+
+ 4.4 Dodaj dodatkowy klucz do obiektu 'fullName', który będzie zawierał połączenie dwóch stringów.
+ Input: [{name: 'Jan', surname: 'Kowalski'}, {name: 'Janina', surname: 'Kowalska'}]
+ Output: '4.4: [{name: 'Jan', surname: 'Kowalski', fullName: 'Jan Kowalski'},
+ {name: 'Janina', surname: 'Kowalska', fullName: 'Janina Kowalska'}]'
+
+ 4.5* (+0,5pkt) Stwórz metodą createInitials, która przyjmuje obiekt z dwoma kluczami name i surname
+ oraz zwraca inicjały:
+ Input: createInitials({name: 'Jan', surname: 'Kowalski'})   Output: '4.5.1: JK'
+ Input: createInitials({name: 'Jan', surname: null})         Output: '4.5.2: J'
+ Input: createInitials({name: null, surname: 'Kowalski'})    Output: '4.5.3: K'
+ Input: createInitials({name: null, surname: null})          Output: '4.5.4: XX'
+
+ */
+
+// Kod dla części 4 poniżej:
+
+// 4.1
+
+const uppercaseFirstLetter = (string) => {
+    return (typeof string === 'string') ? string[0].toUpperCase() + string.slice(1) : 'to nie jest string'
+
+};
+
+console.log('4.1.1:', uppercaseFirstLetter('kamil'));
+console.log()
