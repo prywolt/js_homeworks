@@ -371,3 +371,10 @@ console.log('4.1.2:', uppercaseFirstLetter(12));
 
 // 4.2
 
+const names = ['K$$ami$$l', '$$Jan$ek', 'Kr$$z$ych$u', 'M$$ich$$ał$'];
+const cleanNames = names.map((el) => {
+    return el.replace(/\$/g, '')
+});
+console.log('4.2:', cleanNames);
+
+
