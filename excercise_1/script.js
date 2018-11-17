@@ -377,4 +377,18 @@ const cleanNames = names.map((el) => {
 });
 console.log('4.2:', cleanNames);
 
+// 4.3
 
+const fullNames = ['Jan Kowalski', 'Janina Kowalska', 'Kamil Stoch'];
+const separateNames = fullNames.join(' ').split(' ');
+console.log('4.3:', separateNames);
+
+// 4.4
+
+let kowalscy = [{name: 'Jan', surname: 'Kowalski'}, {name: 'Janina', surname: 'Kowalska'}];
+
+for (let i = 0; i < kowalscy.length; i++) {
+    kowalscy[i].fullName = kowalscy[i].name + ' ' + kowalscy[i].surname;
+}
+
+console.log('4.4: ')
